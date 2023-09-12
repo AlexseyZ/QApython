@@ -60,3 +60,12 @@ for i in range(1, a + 1):
     # print(i)
     c *= i
 print(c)
+
+'''Цифровая сумма'''
+n = int(input())
+s = 0
+
+while n > 0:
+    s += n % 10
+    n = n // 10
+print(s)
