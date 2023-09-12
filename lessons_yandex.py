@@ -52,3 +52,11 @@ elif min == 0:
     print(d, min, " ", max, d, sep=(""))
 else:
     print(min, d, " ", max, d, sep=(""))
+
+'''Факториал'''
+a = int(input())
+c = 1
+for i in range(1, a + 1):
+    # print(i)
+    c *= i
+print(c)
