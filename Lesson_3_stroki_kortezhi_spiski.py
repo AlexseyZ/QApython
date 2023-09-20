@@ -10,3 +10,9 @@ if s == a:
     print("YES")
 else:
     print("NO")
+
+'''Возведение в степень'''
+data = list(map(int, input().split()))
+number = int(input())
+for i in data:
+    print(i ** number, end=' ')
