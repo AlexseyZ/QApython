@@ -1,0 +1,18 @@
+'''Кручу-верчу'''
+s = input()
+for i in s:
+    print(i, end='\n')
+
+'''А роза упала на лапу Азора 4.0'''
+s = str(input())
+a = s[::-1]
+if s == a:
+    print("YES")
+else:
+    print("NO")
+
+'''Возведение в степень'''
+data = list(map(int, input().split()))
+number = int(input())
+for i in data:
+    print(i ** number, end=' ')
