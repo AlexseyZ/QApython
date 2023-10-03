@@ -1,3 +1,16 @@
+'''Азбука'''
+n = int(input())
+counter = 0
+
+for i in range(n):
+    if input()[0] in "абв":
+        counter += 1
+
+if counter == n:
+    print("YES")
+else:
+    print("NO")
+
 '''Кручу-верчу'''
 s = input()
 for i in s:
@@ -16,3 +29,13 @@ data = list(map(int, input().split()))
 number = int(input())
 for i in data:
     print(i ** number, end=' ')
+
+'''Анонс новости'''
+lg = int(input())
+c = int(input())
+for i in range(c):
+    n = input()
+    if len(n) > lg:
+        print(n[: lg - 3].ljust(lg, "."))
+    else:
+        print(n)

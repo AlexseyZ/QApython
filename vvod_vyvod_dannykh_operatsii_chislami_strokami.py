@@ -48,3 +48,32 @@ delivery_time = int(input())
 hours = (h + (m + delivery_time) // 60) % 24
 minutes = (m + delivery_time) % 60
 print(f"{hours // 10}{hours % 10}:{minutes // 10}{minutes % 10}")
+
+'''Чек'''
+product_name = input()
+price = int(input())
+weight = int(input())
+money = int(input())
+total = price * weight
+change = int(money - total)
+a = 'руб/кг'
+b = 'руб'
+print('Чек')
+print(f"{product_name} - {weight}кг - {price}{a}")
+print(f"Итого: {total}{b}")
+print(f"Внесено: {money}{b}")
+print(f"Сдача: {change}{b}")
+
+'''Автоматизация игры'''
+number = int(input())
+d = number % 10  # последняя цифра
+a = number // 1000  # первая цифра
+c = (number % 100) // 10  # вторая цифра с конца
+b = (number % 1000) // 100  # вторая цифра
+print(b, a, d, c, sep='')
+
+'''Дед Мороз и конфеты'''
+n = int(input())
+x = int(input())
+print(x // n)
+print(x % n)
