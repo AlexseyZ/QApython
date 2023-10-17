@@ -62,3 +62,10 @@ a = input()
 b = int(input())
 for i in range(b):
     print(a)
+
+'''А роза упала на лапу Азора 2.0'''
+n = input()
+if n == n[::-1]:
+    print("YES")
+else:
+    print("NO")

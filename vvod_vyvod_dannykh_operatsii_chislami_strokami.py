@@ -77,3 +77,13 @@ n = int(input())
 x = int(input())
 print(x // n)
 print(x % n)
+
+'''Доставка'''
+a = int(input())
+b = int(input())
+c = int(input())
+t = round(float((b - a) / c), 2)
+print(t)
+
+
+

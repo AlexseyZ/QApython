@@ -36,7 +36,6 @@ elif min == 0:
 else:
     print(min, d, " ", max, d, sep=(""))
 
-
 '''Просто здравствуй, просто как дела'''
 print("Как Вас зовут?")
 print(f"Здравствуйте, {input()}!")
@@ -45,3 +44,13 @@ if input() == 'хорошо':
     print('Я за вас рада!')
 else:
     print('Всё наладится!')
+
+'''Властелин Чисел: Братство общей цифры'''
+n_elf = int(input())
+n_gnom = int(input())
+n_chel = int(input())
+
+if n_elf // 10 == n_gnom // 10 == n_chel // 10:
+    print(n_elf // 10)
+elif n_elf % 10 == n_gnom % 10 == n_chel % 10:
+    print(n_elf % 10)
